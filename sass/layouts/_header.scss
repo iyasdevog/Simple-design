@@ -1,0 +1,79 @@
+.header {
+  background-color: $color-secondary;
+  background-size: cover;
+  color: #fff;
+  height: 90vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  &__side {
+    flex: none;
+    width: 35%;
+    height: 14rem;
+    background-color: transparent;
+    outline: 2rem solid #8860d0;
+    outline-offset: 2rem;
+    position: absolute;
+    top: 81%;
+    right: 0;
+    z-index: 1;
+    margin-right: 5rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    &:hover {
+      transform: translateY(-15rem);
+      height: 30rem;
+    }
+    &:hover > &-img {
+      opacity: 1;
+      width: 100%;
+      height: 30rem;
+    }
+
+    &-img {
+      width: 100%;
+      height: 12rem;
+      opacity: 0;
+    }
+  }
+
+  &__mainbox {
+    outline: 2rem solid red;
+    height: 70%;
+    width: 60vw;
+    background-color: transparent;
+    margin-left: 10rem;
+    outline-offset: 2rem;
+    overflow: hidden;
+    // background-image: linear-gradient($color-secondary, $color-secondary);
+    &-img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      opacity: 0.35;
+    }
+
+    &:hover {
+      background-color: red;
+      opacity: 0.75;
+    }
+    &:hover ~ .header-1 {
+      transform: translateX(10rem) translateY(7rem);
+      span {
+        font-size: 150%;
+      }
+    }
+    &:hover > .btn-box {
+      transform: translateY(-300px);
+    }
+    &:hover > img {
+      // opacity: 0.2;
+      filter: brightness(20%);
+    }
+  }
+  &__side {
+  }
+}

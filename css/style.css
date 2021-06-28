@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  border: 2rem solid #fff;
+  position: relative; }
+
+.header-1 {
+  text-transform: uppercase;
+  transform: translateX(-5rem); }
+  .header-1-pre {
+    font-size: 2.6rem;
+    display: block;
+    letter-spacing: 1px; }
+  .header-1-sec {
+    font-size: 6rem;
+    display: block;
+    letter-spacing: 3px; }
+
+.header__p {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5; }
+
+.grid {
+  padding: 20rem; }
+
+.row {
+  max-width: 140rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class^="col-"] {
+  float: left; }
+
+.col-1-of-2 {
+  width: calc((100% - 4rem) / 2); }
+  .col-1-of-2:not(:last-child) {
+    margin-right: 4rem; }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 4rem) / 3); }
+
+.col-1-of-4 {
+  width: calc((100% - 3 * 4rem) / 4); }
+
+.col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+
+.col-2-of-4 {
+  width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+
+.col-3-of-4 {
+  width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+
+.header {
+  background-color: #101d2c;
+  background-size: cover;
+  color: #fff;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative; }
+  .header__side {
+    flex: none;
+    width: 35%;
+    height: 14rem;
+    background-color: transparent;
+    outline: 2rem solid #8860d0;
+    outline-offset: 2rem;
+    position: absolute;
+    top: 81%;
+    right: 0;
+    z-index: 1;
+    margin-right: 5rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+    .header__side:hover {
+      transform: translateY(-15rem);
+      height: 30rem; }
+    .header__side:hover > .header__side-img {
+      opacity: 1;
+      width: 100%;
+      height: 30rem; }
+    .header__side-img {
+      width: 100%;
+      height: 12rem;
+      opacity: 0; }
+  .header__mainbox {
+    outline: 2rem solid red;
+    height: 70%;
+    width: 60vw;
+    background-color: transparent;
+    margin-left: 10rem;
+    outline-offset: 2rem;
+    overflow: hidden; }
+    .header__mainbox-img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      opacity: 0.35; }
+    .header__mainbox:hover {
+      background-color: red;
+      opacity: 0.75; }
+    .header__mainbox:hover ~ .header-1 {
+      transform: translateX(10rem) translateY(7rem); }
+      .header__mainbox:hover ~ .header-1 span {
+        font-size: 150%; }
+    .header__mainbox:hover > .btn-box {
+      transform: translateY(-300px); }
+    .header__mainbox:hover > img {
+      filter: brightness(20%); }
+
+.navigation__checked {
+  display: none;
+  opacity: 0; }
+
+.about {
+  background-color: #a4b3b6;
+  padding: 15rem 0;
+  z-index: 100; }
+
+.heading__box {
+  width: 30%;
+  height: 30rem;
+  background-color: #d83f87;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.205);
+  position: absolute;
+  top: 30%;
+  left: 6%; }
+
+.heading__text {
+  text-transform: uppercase; }
+  .heading__text-1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.side-box {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0); }
+
+.side-photo {
+  height: 100%;
+  width: 100%; }
+
+.side-photo-1 {
+  opacity: 0.1; }
+
+.side-photo-2 {
+  opacity: 1; }
+
+.btn-box {
+  width: 100%;
+  height: 26rem;
+  position: relative; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+  .bg-video-1 {
+    opacity: 1; }
+  .bg-video-2 {
+    opacity: 0.15; }
+  .bg-video__content {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+
+.icon-socail {
+  width: 2rem;
+  height: 2rem;
+  padding: 2.5rem;
+  border-radius: 50%; }
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.icon-pure {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff; }
+
+.btn {
+  border: none;
+  border-radius: 5%;
+  color: #fff;
+  padding: 1.5rem;
+  background-image: linear-gradient(to right, #4568dc, #b06ab3); }
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .btn-box:focus {
+    outline: none; }
+
+.navigation__nav {
+  z-index: 3000;
+  opacity: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__list {
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fffe;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.navigation__check {
+  display: none; }
+
+.navigation__check-btn {
+  background-color: #fff;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 100%;
+  position: fixed;
+  top: 1rem;
+  right: -1rem;
+  padding: 2rem;
+  box-shadow: 0 0 2rem 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer; }
+  .navigation__check-btn:hover {
+    transform: scale(1.2) translate(-2rem);
+    box-shadow: 0 0 2rem #fff; }
+
+.navigation__background {
+  background-color: #7befb2;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  position: fixed;
+  top: 2rem;
+  right: 0.5rem;
+  padding: 2rem;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s;
+  box-shadow: 0 0 2rem 2px #7befb2; }
+  .navigation__background:hover {
+    transform: scale(1.5); }
+
+.navigation__check-icon {
+  width: 3rem;
+  height: 3rem; }
+
+.navigation__check:checked ~ .navigation__background {
+  transform: scale(100);
+  opacity: 1; }
+
+.navigation__check:checked ~ .navigation__check-btn {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 1.8rem;
+  right: 1rem; }
+
+.navigation__check:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }

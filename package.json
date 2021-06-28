@@ -1,0 +1,16 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "webproject"
+  },
+  "author": "iyas",
+  "license": "ISC",
+  "description": ""
+}

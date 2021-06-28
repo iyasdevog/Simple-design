@@ -1,0 +1,26 @@
+.header-1 {
+  text-transform: uppercase;
+  transform: translateX(-5rem);
+  &-pre {
+    font-size: 2.6rem;
+    display: block;
+    letter-spacing: 1px;
+  }
+  &-sec {
+    font-size: 6rem;
+    display: block;
+    letter-spacing: 3px;
+  }
+}
+.header__p {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: $font-display;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  // color: #b06ab3;
+
+  // z-index: 2000;
+  // display: none;
+}
